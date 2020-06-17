@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int solve(int middle, int a[], int n){
-	int cost = 0;
+long long solve(int middle, int a[], int n){
+	long long cost = 0;
 	for(int i = 0; i < n; ++i){
 		cost += abs(a[i] - middle);
 	}
@@ -11,7 +11,7 @@ int solve(int middle, int a[], int n){
 int main() {
 	int n;
 	cin >> n;
-	int a[n], i, min_cost = 0;
+	int a[n], i;
 	for(i = 0; i < n; ++i) cin >> a[i];	
 
     //Find median and then calculate the addition/subtraction needed to get it from the current array element.
